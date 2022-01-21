@@ -5,6 +5,7 @@ import android.os.Bundle
 import com.codepath.debuggingchallenges.R
 import android.content.Intent
 import android.view.View
+import android.widget.Toast
 import com.codepath.debuggingchallenges.activities.CurrentDayActivity
 import com.codepath.debuggingchallenges.activities.MoviesActivity
 import com.codepath.debuggingchallenges.activities.ChangeBackgroundActivity
@@ -31,6 +32,8 @@ class MainActivity : AppCompatActivity() {
 
     fun launchChangeBackgroundActivity(view: View?) {
         launchActivity(ChangeBackgroundActivity::class.java)
+        //Toast.makeText(this,"Bg Act", Toast.LENGTH_LONG).show()
+
     }
 
     fun launchToolbarActivity(view: View?) {
